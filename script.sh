@@ -6,3 +6,5 @@ echo " java version"
 java --version
 echo "list the file in directory"
 ls -al
+echo "what are the env variable in github?"
+env
