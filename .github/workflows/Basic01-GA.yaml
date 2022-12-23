@@ -6,7 +6,5 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: List files in the repository
-        run: ls -a
-      - name: List who the user is
-        run: whoami
+      - name: Script Output
+        run: sh ./script.sh
