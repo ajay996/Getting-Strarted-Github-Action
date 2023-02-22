@@ -2,10 +2,10 @@ name: GitHub Actions Demo
 on: workflow_dispatch
 jobs:
   Explore-GitHub-Actions:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions-hub/kubectl@master
         env:
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
         with:
-          args: get pods
+          args: kubectl get pods
